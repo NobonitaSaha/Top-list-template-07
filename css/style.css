@@ -575,6 +575,10 @@ p.footer-p-a > a{
 p.footer-p-a > a:hover{
     color: #E5B80B !important;
 }
+
+img.footer-ico.footer-icon-sm {
+    width: 62px;
+}
 /* ------------------------------
     Footer End
 -------------------------------- */

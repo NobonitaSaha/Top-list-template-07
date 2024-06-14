@@ -208,6 +208,10 @@
         max-width: 72px;
     }
 
+    img.footer-ico.footer-icon-sm {
+        width: 46px;
+    }
+
     #navbar p {
         color: #ffffff;
         font-family: "Poppins", sans-serif;

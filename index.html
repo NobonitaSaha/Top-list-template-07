@@ -26,6 +26,21 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
+        <script>
+            function formatDate(date) {
+                const options = { month: 'long', day: 'numeric', year: 'numeric' };
+                return date.toLocaleDateString('en-US', options);
+            }
+    
+            function updateDate() {
+                const dateElement = document.getElementById('dynamic-date');
+                const currentDate = new Date();
+                dateElement.textContent = formatDate(currentDate);
+            }
+    
+            window.onload = updateDate;
+        </script>
+
 
         <!-- ============== Style CSS ============== -->
         <style>
@@ -77,7 +92,7 @@
         
                             </div>
                             <div class="col-md-5 updated d-none d-sm-block">
-                                <p>Última atualização do bônus : <strong>May 25 2024 02:09 PM</strong></p>
+                                <p>Última atualização do bônus : <strong id="dynamic-date"></strong></p>
                             </div>
         
                         </div>

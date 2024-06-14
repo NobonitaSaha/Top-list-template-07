@@ -1,14 +1,14 @@
 @media only screen and (max-width: 575px) and (min-width: 320px) {
-    body {
-        background-attachment: scroll
-    }
-
     .header h1 {
         font-size: 36px;
         line-height: 50px;
         display: block;
-        padding: 30px 0px 0px 0px;
+        padding: 10px 0px 0px 0px;
         text-align: left;
+    }
+
+    h1.display-fixed-none {
+        padding-top: 15px;
     }
 
     .header p {
@@ -19,6 +19,23 @@
         letter-spacing: 0px;
         line-height: 26px;
     }
+
+    h1.cookie-privacy {
+        font-size: 32px;
+        line-height: 40px;
+        width: 100%;
+    }
+
+    p.cookie-privacy {
+        font-size: 14px;
+        margin-bottom: 0px;
+        padding: 10px 0px;
+        text-align: left;
+        letter-spacing: 0px;
+        line-height: 26px;
+        width: 100%;
+    }
+
 
     p.trusted-bar-p {
         display: flex;
@@ -39,7 +56,7 @@
     }
 
     .c-list-item h3 {
-        font-size: 20px;
+        font-size: 22px;
         font-family: "Lato", sans-serif;
         font-weight: 600;
         line-height: 24px;
@@ -54,8 +71,8 @@
 
     .scores strong {
         color: var(--main-color);
-        margin-right: 7px;
-        font-size: 10px;
+        margin-right: 10px;
+        font-size: 0.85rem;
         font-weight: 500;
     }
 
@@ -190,13 +207,35 @@
         padding: 5px 2px 25px 2px;
         max-width: 72px;
     }
+
+    #navbar p {
+        color: #ffffff;
+        font-family: "Poppins", sans-serif;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 22px;
+        padding: 15px 10px 0px 10px;
+        letter-spacing: 0.4px;
+        word-spacing: 1px;
+    }
+
+    img.header-logo {
+        width: 42px;
+        margin-right: 2px;
+        height: auto;
+        margin-top: -3px;
+    }
+
+    .cookie-privacy-header {
+        padding: 20px 10px 20px 10px;
+    }
 }
 
 
 
 @media only screen and (max-width: 868px) and (min-width: 576px){
     .header {
-        padding: 50px 0px 20px 0px;
+        padding: 85px 0px 20px 0px;
     }
 
     .header h1 {
@@ -257,6 +296,10 @@
     .c-list-item h1 {
         font-size: 45px;
     }
+
+    .header {
+        padding: 30px 0px 20px 0px;
+    }
 }
 
 
@@ -282,5 +325,13 @@
     .trusted-bar p {
         font-size: 12px;
         letter-spacing: 0px;
+    }
+
+    h1.cookie-privacy {
+        width: 515px;
+    }
+
+    p.cookie-privacy {
+        width: 515px;
     }
 }
